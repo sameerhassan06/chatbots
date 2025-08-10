@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "functions": {
     "package.json": {
       "includeFiles": "dist/public/**"
@@ -13,3 +14,22 @@
     }
   ]
 }
+=======
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/public"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
+>>>>>>> d17a9d398535fee282495c325a8fc395b5b3cc1f
